@@ -1,15 +1,15 @@
+<!-- app/views/layouts/application.html.erb -->
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MyNewRailsApp</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>HelloRailsReact</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
   </head>
-
   <body>
-    <%= yield %>
+    <div id="root"></div>
+    <%= javascript_pack_tag 'application' %>
   </body>
 </html>
