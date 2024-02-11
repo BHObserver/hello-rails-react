@@ -5,7 +5,7 @@ module.exports = {
   mode: 'production',
   devtool: 'source-map',
   entry: {
-    application: './app/frontend/src/index.js',
+    application: './app/javascript/application.js',
   },
   module: {
     rules: [
